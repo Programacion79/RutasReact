@@ -1,26 +1,14 @@
-import {Routes,Route} from "react-router-dom"
-import About from "./Pages/About" 
-import Banner from "./components/Banner"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import Habitaciones from "./components/Habitaciones"
-import Menu from "./components/Menu"
-import Ours from "./components/Ours"
-function App() {
- 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
 
+function App() {
   return (
-    <>
-<Routes>
-  <Route path="/" element={<HomePage/>}/>
-  <Route path="/About" element={<AboutPage/>}/>
-  <Route path="/Roms" element={<RomsPage/>}/>
-  <Route path="/Contact" element={<ContactPage/>}/>
-  <Route path="*" element={<NofoundPage/>}/>
-</Routes>
-    
-    </>
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

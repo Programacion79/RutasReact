@@ -1,16 +1,12 @@
+import React from "react";
+import AboutComponent from "../components/About"; // 👈 IMPORTACIÓN CORRECTA
 
-
-import Menu from "..components/Menu"
-import Footer from "..components/Footer"
-import About from "..components/About"
-
-export default function AboutPage() {
+function About() {
   return (
     <>
-      <Menu/>
-      <About/>
-      <Footer/>
+      <AboutComponent />
     </>
-  )
+  );
 }
 
+export default About;
